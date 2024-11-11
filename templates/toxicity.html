@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeutralNote</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/toxicity.css">
+</head>
+<body>
+    <div id="chat-wrapper">
+        <div id="chat-bot-user">
+            <div id="chat-bot-user-name">
+                <h3 id="newName"></h3>
+            </div>
+            <div id="chat-bot-user-logo" onclick="logoutButtonClicked();">
+                <img width="50" height="50" onclick="logoutButtonClicked();" src="../static/logout.png"/>
+            </div>
+        </div>
+        <div id="letter-pool"></div>
+        <div id="temp-letter-pool"></div>
+        <div id="letter-overlay"></div>
+        <div id="chat-message-window">
+            <div id="message-input-wrapper">
+                <div id="message-input"><input id="message-input-field" type="text" placeholder="Type a message" maxlength="100" />
+                    <div id="send-message-button"><i class="far fa-arrow-alt-circle-right"></i></div>
+                </div>
+            </div>
+            <div class="scroll-bar" id="chat-message-column-wrapper">
+                <div class="static" id="chat-message-column"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/jquery.min.js"></script>
+    <script type="text/javascript" src="https://codepen.io/TheVVaFFle/pen/0299c8b36352c72cbfe8df48b47b54ca.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script type="text/javascript" src="../static/toxicity.js"></script>
+</body>
+</html>

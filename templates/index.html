@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login - NeutralNote</title>
+    <link rel="stylesheet" href="../static/login.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#sign-up">
+                <h1>Create Account</h1>
+                <span>or use your email for registration</span>
+                <input id="signUpuserName" type="text" placeholder="Name" required aria-label="Name" />
+                <input id="signUpuserMail" type="email" placeholder="Email" required aria-label="Email" />
+                <input id="signUpPassword" type="password" placeholder="Password" required aria-label="Password" />
+                <button type="button" id="signUp">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#sign-in">
+                <h1>Sign in</h1>
+                <span>or use your account</span>
+                <input id="username" type="email" placeholder="Email" required aria-label="Email" />
+                <input id="password" type="password" placeholder="Password" required aria-label="Password" />
+                <button type="button" id="signIn">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please log in with your personal info</p>
+                    <button class="ghost" onclick="togglePanelActive(false)" aria-label="Switch to Sign In">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start your journey with us</p>
+                    <button class="ghost" onclick="togglePanelActive(true)" aria-label="Switch to Sign Up">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/login.js"></script>
+</body>
+</html>
