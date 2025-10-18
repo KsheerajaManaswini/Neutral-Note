@@ -1,0 +1,6 @@
+Django == 4.1.13
+PyJWT
+openai (0.28)
+detoxify
+mysqlclient == 2.2.4 or pymysql (in settings.py import pymysql and pymysql.install_as_MySQLdb())
+torch
